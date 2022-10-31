@@ -1,0 +1,32 @@
+{
+    "help": {
+        "usage": "!help <command>",
+        "description": "Displays a list of all Sentinel-bot commands",
+        "args": [],
+        "aliases": ["h"]
+    },
+    "ban": {
+        "usage": "!ban/b/nab <user> <duration> [reason]",
+        "description": "Bans a given user for a given duration. An optional ban reason can be specified.",
+        "args": ["user", "duration", "reason"],
+        "aliases": ["b", "nab"]
+    },
+    "jail": {
+        "usage": "!jail/j <user> <duration>(0 or no duration means indefinitely)",
+        "description": "Move a user to a channel for x duration (locking them in the chosen channel)",
+        "args": ["user", "channel", "duration", "reason"],
+        "aliases": ["j"]
+    },
+    "record": {
+        "usage": "!record/rec/r <user> <range/all[]/start+end>",
+        "description": "Save a user's server chat history within a given duration",
+        "args": ["user", "start", "end", "all"],
+        "aliases": ["rec", "r"]
+    },
+    "roar": {
+        "usage": "!roar <channel> <volume> <duration>",
+        "description": "Send bot to a specified channel and roar",
+        "args": ["channel", "volume", "duration"],
+        "aliases": []
+    }
+}
